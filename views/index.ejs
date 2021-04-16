@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>データベースへの保存テスト</title>
+</head>
+<body>
+  <h1>データベースへの保存テスト</h1>
+  <form action="/datatest" method="POST">
+    <input type="text" name="content">
+    <input type="submit" value="送信">
+  </form>
+
+  <h2>データベースからの読み込みテスト</h2>
+  <% items.forEach((item) => { %>
+    <li> <%= item.content %> </li>
+  <% }); %> 
+</body>
+</html>
